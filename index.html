@@ -1,0 +1,853 @@
+<html>
+    <head>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/053c5fe0bd.js"></script>    
+    </head>
+    
+    <body><section class="preview-container" id="previewContainer"><div class="loader-overlay loader-overlay-resume position-absolute d-none" id="resumeLoader"><div class="loader-img"></div></div><div id="displayResume" class="modal-preview-user-select-state"><div><style type="text/css" id="static">
+        /*Font support for MAC*/
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:normal;src:local('Century Gothic'),url('https://content.livecareer.com/zty/fonts/CenturyGothic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:normal;src:local('Century Gothic Bold'),url('https://content.livecareer.com/zty/fonts/CenturyGothicBold.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:italic;src:local('Century Gothic Bold Italic'),url('https://content.livecareer.com/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:italic;src:local('Century Gothic Italic'),url('https://content.livecareer.com/zty/fonts/CenturyGothicItalic.ttf') format('truetype')}
+
+     /*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">*/
+   
+    /*<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">*/
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+        body{line-height:1;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+        #document ol,#document ul{list-style:none}
+        #document table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+        /*START content disc style for LI*/
+        #document ul,#document li{margin:0;padding:0;list-style-type:disc}
+        #document ul li{margin:0 0 0 16px;padding:0}
+        @-moz-document url-prefix() {#document ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+        /*END content disc style for LI*/
+
+        /*common style*/
+        #document .txtBold{font-weight:bold}
+        #document .paddedline{display:block}
+        #document .pt5{padding-top:5px}
+        #document .pb5{padding-bottom:5px}
+        #document .word-break{word-wrap:break-word}
+        #document .disp-n{display:none}/*For resume title - to be remove later*/
+
+        /* table skills */
+        #document table.skills,.table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+        #document table.skills th,table.skills td{width:20%;text-align:center}
+        #document table.skills .skillname,#document table.skills .skillrating{text-align:left;width:35%}
+        #document table.skills .skillrating{width:20%}
+        #document table.skills .skillyears,#document table.skills .skilllast{width:19%}
+        #document table.skills .pad1{width:5%}
+        #document .skills .pad2,#document table.skills .pad3{width:1%}
+
+        /* document */
+        #document {
+    box-sizing: border-box;
+    padding: 30px 25px 30px 25px;
+    color: #343434;
+    font-variant-ligatures: none;
+    line-height: 16px;
+    min-height: 792px;
+}
+        #document .name{color:#373d48;font-weight:700;overflow:hidden;text-align:left;display:table;min-height:86px}
+        #document .flname{display:table-cell;}
+        #document .address .singlecolumn,#document .additional_lnk .singlecolumn{margin-left:0!important}
+        #document .degreeGap{margin-bottom:4px}
+        #document .locationGap{margin-top:4px}
+        #document .heading{font-weight:700;margin-bottom:10px;position:relative}
+        #document .sectiontitle{font-size: 20px;color:#373d48;line-height:23px;word-wrap:break-word;text-decoration: underline;}
+        #document div.firstparagraph{padding-top:0px}
+        #document .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+
+        /*monogram*/
+        #document .monogram{}
+
+        /*leftBox and rightBox css*/
+        #document .left-box,#document .right-box{box-sizing:initial;display:table-cell;padding-left:15px;vertical-align:top}
+        #document .left-box .firstsection{margin:0;padding:0;min-height:101px}
+        /*#document .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px;left:-97px}*/
+        #document .paragraph{position:relative}
+        #document .left-box .paragraph{margin-left:0}
+        #document .section:empty{display:none}
+        #document .left-box .section{border-left:1px solid #d7d7d7;margin-left:12px;padding-left:25px;position:relative}
+        #document .left-box{width: 500px;}
+
+        #document .left-box .firstsection,#document .additional_lnk,#document .summary{border:0;padding-top:0!important}
+        #document .firstsection + .section:before{border:1px solid #fff;content:'';left:-1px;position:absolute;top:0}
+/*        #document .heading:before,#document .left-box .heading ~ .paragraph .date-content:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;right:-10px;position:absolute;width:8px;z-index:2}*/
+        #document .right-box .heading:before{left:0}
+        #document .right-box .sectiontitle{}
+        #document .heading:before{height:20px;left:-35px;width:20px}
+
+        /* Issues fix for builder page */
+        #displayResume div#document.document {
+    min-height: 792px;
+    width: 980px;
+    margin: 40px auto;
+}
+        #document .SortableList{margin-bottom:0!important}
+        #document .SortableList,#document > div{min-height:inherit}
+        #document > div:not(.topsection),#document > div:not(.parentContainer){min-height:auto}
+        #document .right-box .summary .paragraph{margin-left:0}
+        #document .right-box > .SortableItem:first-child .section{padding-top:20px!important}
+/*        #document .left-box > .SortableItem .paragraph .date-content:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;right:-10px;position:absolute;width:8px;z-index:2}*/
+        #document .SortableInner > .SortableItem:last-of-type .singlecolumn > .pb5{margin-bottom:0}
+
+        /* Only for firefox */
+        @-moz-document url-prefix() {#document .parentContainer{height:1px}}
+
+        #document,#document table{line-height:18px}
+        #document.fontface{font-family:Century Gothic}
+        #document.fontsize{font-size:14px}
+        #document.pagesize{width:612px}
+        #document .section{padding-top:15px}
+        #document .left-box .section:after{padding-bottom:10px}
+        #document .paragraph{padding-top:15px}
+        #document .singlecolumn,#document .maincolumn{word-wrap:break-word}
+        #document left-box .singlecolumn,#document left-box .maincolumn{margin-left:0px}
+        #document table.skills td{padding-top:2.5px}
+        #document .jobtitle, #document .degree, #document .programline{font-size:16px}
+        #document .name{color:#373d48;font-size:36px;line-height:42.5px}
+        #document .monogram svg circle{fill:#373d48}
+        #document .sectiontitle,#document .heading:before{font-size:16px;color:#373d48;line-height:23px}
+        #document .sectiontitle, #document .resumeTitle{line-height:23px}
+        #document .right-box{width:200px}
+        #document .firstsection + .section:before{height:1.5px}
+        #document .heading:before{background:#373d48;top:1.5px}
+        #document .left-box .heading ~ .paragraph .date-content:before,#document .left-box > .SortableItem .paragraph .date-content:before{background:#373d48}
+        #document .paragraph .date-content:before{top:5.5px}
+        /*#document .left-box .paddedline.date-content{line-height:19px}*/
+    #document .left-box .paddedline.date-content {
+    position: absolute;
+    font-weight: 700;
+    margin-left: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: 17px !important;
+}
+    
+        /* ADDEDUNDUM */
+       .photo-cv {border-radius: 50%;border: 1px solid #eee;}
+       #POSITION {font-size: 55%;float: left;}
+       #FIELD_SKC1 span {
+    background: #444;
+    color: #fff;
+    margin: 2px;
+    border-radius: 2px;
+    padding: 2px 6px;
+    display: inline-block;
+}
+       #document a {color: #0366d6;text-decoration: none;font-weight: bold;}
+       .left-box p, .left-box ul li {font-size: 108%;line-height: 143%;}
+       .hide-me, .accomodation {}
+ 
+img.logo-job {
+    width: 40px;
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}   
+        
+.logo-job i {
+    width: 40px;
+    float: left;
+    margin-right: 0px;
+    clear: both;
+    font-size: 35px;
+    padding: 3px;
+}
+        
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+        
+        .button-cv {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button-cv:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+        
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+    
+/* Styling an indeterminate progress bar */
+    
+progress:not(value) {
+	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+	/* Get rid of the default appearance */
+	appearance: none;
+	
+	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+	border: none;
+	
+	/* Add dimensions */
+	width: 100%; height: 20px;
+	
+	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	
+	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+	color: royalblue;
+	
+	position: relative;
+	margin: 0 0 1.5em; 
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	position: relative;
+	
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+	
+	/* Let's animate this */
+	animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+	/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+	content: '';
+	position: absolute;
+	
+	width:5px; height:5px;
+	top:7px; right:7px;
+	
+	background-color: white;
+	border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+	
+	display: block;
+	text-indent: -9999px;
+}
+
+p[data-value] { 
+  
+  position: relative; 
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+p[data-value]:after {
+	content: attr(data-value) '';
+	position: absolute; right: -18px;
+font-size: 12px;
+font-weight: bold;
+}
+
+/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+
+  
+/* THE END */
+    
+    </style></div>
+                       
+                       
+<div id="document" class="document fontsize fontface vmargins hmargins pagesize TRZ6"><div class="SortableList" style="margin-bottom: 25px;"><div id="CONTAINER_PARENT_0" class="parentContainer"><div id="CONTAINER_1" class="right-box"><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div>
+
+<div id="SECTION_NAMEa3e1894f-dca2-473a-a7c9-cad4590549c1" class="section notdraggable firstsection" data-section="[object Object]"><!-- react-text: 17544 --><!-- /react-text --><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_NAME_59e0281a-471c-4a36-b673-6230da8b3d3c" class="paragraph PARAGRAPH_NAME firstparagraph"><div>
+                        <div class="monogram" dependency="FNAM|LNAM">
+                            <img class="photo-cv" src="Federico-Fioravanti.jpg" width="140" height="140">
+                        </div>
+                        <div class="name">
+                            
+
+                        </div>
+                    </div></div></div></div><section class="wrapper wrapper-contact" data-section="[object Object]" data-hideedit="false" data-hidedelete="true" data-hidemove="true"><div id="SECTION_CNTCebbc96fd-4ed4-4467-8b02-792e0e2d322f" class="section SECTION_CNTC notdraggable" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_CNTC">Contacts</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_CNTC_69f9e19b-0c2f-45e6-b27c-290eee3ed55d" class="paragraph PARAGRAPH_CNTC firstparagraph"><div>
+                        <div class="address">
+                            <div class="singlecolumn">
+                                <div dependency="STRT|CITY|STAT|ZIPC">
+                                    <div class="txtBold">Address </div>
+                                    <!--<div class="field" id="FIELD_STRT">Rottenbiller Utca 35</div>-->
+                                    <span class="field" id="FIELD_CITY">Budapest</span><span dependency="CITY+STAT|ZIPC">,</span>
+                                    <span class="field" id="FIELD_STAT">Hungary</span><span dependency="STAT+ZIPC"></span>
+                                    <!--<span class="field" id="FIELD_ZIPC">1077</span>-->
+                                </div>
+                                <div class="txtBold pt5" dependency="HPHN|CPHN">Phone </div>
+                                <div dependency="HPHN">
+                                    <span class="field" id="FIELD_HPHN">(+39)3406246452</span>
+                                </div>
+                                
+                                <div class="txtBold pt5" dependency="EMAI">E-mail </div>
+                                <div dependency="EMAI" class="word-break">
+                                    <span class="field" id="FIELD_EMAI">federico.fioravanti@icloud.com</span>
+                                    
+<!--                                <div class="txtBold">Skype ID </div>
+                                    <div class="field" id="FIELD_STRT">amciamkarlo</div>-->
+                                    
+                                     <div class="txtBold">Find me on:</div>
+                                    
+                                    <p><a href="https://github.com/FedericoFioravanti/" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/federico-fioravanti-54b96214/" target="_blank">LinkedIn</a> | <a href="https://join.skype.com/invite/pbmFAwOliKXh" target="_blank">Skype</a> | <a href="https://codepen.io/FedericoFioravanti/" target="_blank">CodePen</a></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div>
+                       
+                       
+                       <div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="false"><div id="SECTION_HILT65044885-7ebf-406c-abc9-349eb635472e" class="section" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_HILT">Technical Skills</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_HILT_40a29f9b-1f4e-49cf-83b1-adbf6baa178e" class="paragraph firstparagraph"><div>
+                        <div class="singlecolumn maincolumn">
+                            <span class="paddedline" id="FIELD_SKC1">
+  
+                           <span>Strong UX/UI fundamentals </span>
+                           <span>HTML5</span> 
+                           <span>CSS3</span>  
+                           <span>Web standards</span>
+                           <span>Web accessibility</span>   
+                           <span>On-page markup</span>  
+                           <span>Responsive Web Design</span>   
+                           <span>Project Management</span>  
+                           <span>Command line</span>
+                           <span>Git</span>   
+                           <span>Lighthouse</span>
+                           <span>Google Pagespeed</span>
+                           <span>WebPageTest</span>
+                           <!--Solid Project management experience-->
+                             
+                             <div class="txtBold pt5" dependency="HPHN|CPHN">Front-End and css frameworks: </div>                                  
+
+                            <span>Bootstrap</span><span>Foundation</span><span>Bulma</span><span>Pure.css</span>                   
+                                               
+                             </span>  
+                            
+                        </div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div>
+
+<div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="false"><div id="SECTION_HILT65044885-7ebf-406c-abc9-349eb635472e" class="section" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_HILT">Tools</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_HILT_40a29f9b-1f4e-49cf-83b1-adbf6baa178e" class="paragraph firstparagraph"><div>
+                        <div class="singlecolumn maincolumn">
+                            <strong>SEO Tools:</strong> Google Search Console, SemRush, Botify, OnCrawl, Screaming Frog, Majestic, aHref;<br><br>
+                            <strong>Project Management Tools:</strong> Attask, Atalassian Jira, Confluence, Monday.com, Trello <br><br>
+                            <strong>Image editing Tools:</strong> Adobe Creative Suite (Dreamweaver, Photoshop), FTP clients, Gimp<br><br>
+                            <strong>CMS:</strong> iVolution Admin, WordPress, Joomla, Drupal<br><br>
+                            <span class="paddedline" id="FIELD_SKC2"><p><strong>Audio Editing: </strong>Ableton live, Propellerhead Reason.</p></span>
+                        </div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="false"><div id="SECTION_LANG3b075ecb-5200-45bc-b195-23b661c64727" class="section" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_LANG">Languages</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_LANG_e7990567-60ca-4570-8537-0521f5dc7c67" class="paragraph firstparagraph"><div>
+                    
+        <div class="field singlecolumn" id="FIELD_FRFM">
+<!--<p>Italian <br> <progress value = "100" max = "100"/><br>Native</p>
+<p>English <br> <progress value = "85" max = "100"/><br>Fluent</p>-->
+
+          <p style="width:80%" data-value="Native">Italian</p>
+		<progress max="100" value="100" class="skill">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 100%">Native</span>
+			</div>
+		</progress>   
+      
+       <p style="width:90%" data-value="Fluent">English</p>
+		<progress max="100" value="90" class="skill">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 90%">Fluent</span>
+			</div>
+		</progress>   
+
+   <p style="width:80%" data-value="Advanced">Portuguese</p>
+		<progress max="100" value="80" class="skill">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 80%">Advanced</span>
+			</div>
+		</progress>   
+                                    
+               		<!-- HTML5 -->
+    <p style="width:80%" data-value="Advanced">Spanish</p>
+		<progress max="100" value="80" class="skill">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 80%">Advanced</span>
+			</div>
+		</progress> 
+                  
+<!--                   <button type="submit" onclick="window.open('/Misco.png')">Download Resume | PDF</button>-->
+                   
+                   
+                   </div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div></div><div id="CONTAINER_0" class="left-box"><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper wrapper-contact" data-section="[object Object]" data-hidedelete="true" data-hidemove="true"><div id="SECTION_NAMEa3e1894f-dca2-473a-a7c9-cad4590549c1" class="section notdraggable firstsection" data-section="[object Object]"><!-- react-text: 17544 --><!-- /react-text --><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_NAME_59e0281a-471c-4a36-b673-6230da8b3d3c" class="paragraph PARAGRAPH_NAME firstparagraph"><div>
+                        
+                        <div class="name">
+                            <div class="flname txtBold word-break">
+                                <span class="field" id="FIELD_FNAM">Federico</span>
+                                <span class="field" id="FIELD_LNAM">Fioravanti</span>
+
+                                <span class="field" id="POSITION">Technical SEO Specialist / Sitebuilder</span>
+                                
+                            </div>
+ 
+
+                        </div>
+                    </div></div></div></div><div id="SECTION_RTTLc9569720-197b-4e1c-b456-409ee2007b31" class="section rsmTitle disp-n noparagraph" data-section="[object Object]"><!-- react-text: 17549 --><!-- /react-text --><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_RTTL_" class="paragraph firstparagraph text-muted"><div>
+                        
+                    </div></div></div></div><!-- react-text: 17553 --><!-- /react-text --><div></div></section><div class="acrs-bdr pa dn"></div></div><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="true"><div id="SECTION_SUMM2fe0e90b-c9b9-40bb-b6e0-e13db6b0aa99" class="section summary notdraggable" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_SUMM">Professional Summary</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_SUMM_03ffd6e6-9dff-49cc-9ec0-8402293fde57" class="paragraph firstparagraph"><div>
+                        <div class="field singlecolumn noPind" id="FIELD_FRFM">
+<p>Applied experience in Online marketing and Product Management in particular on projects related to SEO, UX/UI and Front-End Design.</p><br>
+<p>More than 6 years experience in international marketing, working in Agile environments and with a strong understanding of industry trends I am skilled in multitasking and working on several projects simultaneously. Customer service-oriented, I have good ability to grasp new skills and troubleshoot problems.</p><br>
+<p>Experienced in communicating with creative teams and dealing with clients' needs and keen on learning and finding new solutions.  <!--Passionate about adopting ideas and bringing them to life collaborating in a team.--></p></div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="true" data-hidedelete="false" data-hidemove="false"><div id="SECTION_EXPR6c73132f-be4a-43c3-b209-1522557d7669" class="section experience" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_EXPR">Work History</div></div><div class="sortableInner"><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_f783ec21-9a86-48f1-8005-81fd0e40edd9" class="paragraph firstparagraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2018-04</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">Current</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Liligo.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Technical SEO Specialist</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">eDreams Odigeo</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES"><br>
+                                <ul>
+ <li>Performing on-page SEO audits, Keyword Research and competitors analysis;</li>
+ <li>Define the SEO roadmap and Develop and execute successful SEO strategies;</li> 
+ <li>Identifying and executing technical SEO improvements and optimizations;</li>
+ <li>Conduct Website Review, Market Research and Keyword Research to guide content teams;</li>
+ <li>Ensure that content is search-engine friendly and optimized to increase the profitability of the SEO strategies;</li>
+ <li>Development of new landing pages and enhancement of existing ones;</li>
+ <li>Review technical SEO issues and recommend fixes, onsite optimisation and website architecture changes;</li>
+ <li>Collect data and reports on traffic, rankings and other SEO aspects;</li>
+ <li>Structured data</li>
+</ul><br>
+<!--<p>Measuring and monitoring the speed of the site with:</p>
+<ul>
+ <li>Lighthouse, for Google Chrome – Great for benchmarking</li>
+  <li>Google Pagespeed – Great for technical reccomendations;</li>
+ <li>WebPageTest – Great for spotting slow resources and bottlenecks</li>
+</ul><p></p>-->
+<p><strong>Accomplishment:</strong> CTR increased over 1.5% after the implementation of mark-up on all the flight route pages with over $7000,000 in extra leads from increase in Organic Traffic.</p>
+<br>
+</span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_17d0c3d4-af88-417d-8110-3265d76a95ae" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2012-03</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">Current</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <div class="logo-job"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></div>
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Site Builder And SEO Expert</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Freelance</span>
+                                <span class="jobcity" id="FIELD_JCIT"></span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+ <li>On-page technical SEO audits (technical, analytics, content) and present recommendations to site owners;</li>
+ <li>Design solutions and architecture recommendations suggesting Search engine friendly site contents;</li>
+ <li>Website Review and Market Research, Search engine optimization and on-page markup;</li>
+ <li>Keyword identification, comparisons, and strategic recommendations;</li>
+ <li>Drive improvement with the latest SEO practices and assist in improving solution offerings for improving ranking, organic traffic and rate of conversions of clients' websites;</li>
+ <li>Measuring and monitoring SEO implementations and results of strategies;</li> 
+ <li>Reviewing website performance data and changing SEO methods as appropriate;</li>
+<!--Site speed
+Mobile-friendliness
+Indexing
+Crawlability
+Site architecture
+Structured data-->
+</ul>
+<br>
+                       </span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_1d00dcdd-d3d3-423f-9091-65a59cf390ee" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2017-06</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2018-01</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Misco.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Digital User Experience Developer</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Misco Business Services Kft</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+<li>Planning and developing new projects focused on Front-end features;</li> 
+<li>Enhance the UI and UX of the website offering operational improvements and providing inputs on potential project opportunities;</li>
+<li>Improve the User Experience by simplifying processes and improving existing workflows as well as testing technical aspects of code delivered;</li>
+<li>Finding issues with UX, proposing a solution and developing it (website performance, cross browser compatibility, analisys etc.);</li>           
+<li>Managing cross-functional projects and meetings with all relevant stakeholders;</li>
+<li>Set the UX strategy for the company while continuously monitor and troubleshoot for optimal quality;</li>
+</ul>
+<br>
+<!--<p><strong>Achievement:</strong> Developing and testing new operational improvements such as and I was responsible for including several new projects (SEO, UX/UI) in the pipeline.</p>--></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_e7c5795b-9625-4114-a244-20941f1d490d" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2016-11</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2017-06</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Misco.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Digital Project Developer</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Misco Business Services Kft</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+ <li>Executing technology strategy and architecture recommendations for Digital Innovation projects across EMEA increasing front-end efficiency by developing fully functional and responsive design;</li>
+ <li>Responsible for the operative management of the digital projects; managing and facilitating cross-functional project meetings and executing the project steps and follow-up;</li>
+ <li>Research and identify new technologies, tools or techniques that improve the journey of users online;</li>
+ <li>Measure website performance, evaluate &amp; Develop roadmaps for new web functionality, usability tests &amp; pilots;</li>
+ <li>Working closely with Marketing, Inbound Sales &amp; Customer Service Teams, monitoring and troubleshooting of the Projects ensuring steps are executed;</li>
+</ul>
+<br>               
+                       </span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_8dfb18c5-38a3-496b-b0cc-87df38e4971d" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2015-07</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2017-06</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Systemax.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Digital Content Developer</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Systemax Business Services Ltd</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>  
+<ul>
+<li>Ad-hoc development of landing pages/micro-sites/blogs layout and design for all EMEA Countries supporting weekly marketing campaigns;</li>
+<li>Responsible for building and maintaining landing pages to support sales generation through online marketing campaigns, ensuring creative produced adheres to the briefing requirements, internal/external brand and technical guidelines;</li>
+<li>Gain user information and monitor results in order to increase customer conversion and engagement;</li> 
+<li>Propose improvements that enhance SEO outcomes and user experience;</li>
+<li>Organized training session for new joiners about HTML and CSS.</li>
+<br>
+<p><strong>Achievement:</strong> Together with my team I entirely redesigned the company website layouts in 6 months participating in all stages of the designing process, from design to test and up to production deployment.</p>
+</ul>
+<br>
+                       </span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><!--<div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_f584ec89-9b93-440b-9d50-8d0ab81af634" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2013-11</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2015-07</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Web Content Creator</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Systemax Business Services Ltd</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES"><ul>
+
+</ul><p><br></p></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div>--><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_6a92a9b6-ce30-4cb2-b957-3a2c3a45bb41" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2012-05</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2013-11</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="IBM.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">HR Customer Service Representative</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">IBM</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+<li>Interface between customers and the HR Department with any Expenses &amp; Reimbursement, Compensation &amp; Benefits queries;</li>
+<li>Support to IBM internal account on HR policies, business guidelines and corporate policies.</li>
+</ul>
+<p><strong>Tools:</strong> Oracle Siebel CRM</p>
+<p><strong>Countries supported:</strong> Italy, Spain and Portugal</p>
+<br>
+                            </span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_600390b7-a08d-4e3e-b644-89e891cdc87a" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2011-09</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2012-05</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Alenis.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Marketing Assistant</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Alenis Hungary Ltd</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Budapest</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+ <li>Responsibility on strategic analysis, planning and marketing promotion for the e-commerce platforms used by the company for Lavazza products. </li>
+ <li>Planning and execution of e-commerce strategy with special focus on campaigns on Search Engines, diffusion of PR communications, posting of commercials on e-business portals, direct emailing and affiliate programs development;</li>
+<!-- <li>Online and offline co-marketing partnerships developement: analysis, negotiation and implementation.</li>-->
+</ul>
+<br>
+</span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper accomodation" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_ea0df0c5-0373-431c-858e-ae1396d29479" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2011-09</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2012-05</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Hostel Worker At Kitsch Hostel</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Bora Bota, Lda, Kitsch Hostel</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Lisbon</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES"><ul>
+ <li>Take care of the cleaning of the hostel, preparing breakfast for guests and organising training for new staff members;</li>
+ <li>Scheduling shifts for staff and informing them of their work commitments;</li>
+ <li>Targeting new markets to increase interest in the hostel;</li>
+ <li>Dealing with security issues, greeting customers, dealing with customer complaints and assessing feedback from them; </li>
+ <li>Ensuring events held at the hotel run smoothly;</li>
+</ul><p><br></p></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_2de317e3-d9f6-40a5-8304-8887e9e4df0e" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2005-08</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2010-07</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                           <img class="logo-job" src="Fioravanti.png">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Online Marketing And Advertising</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">Fioravanti Motors Srl</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Rovigo</span>
+                                <span class="jobstate" id="FIELD_JSTA"></span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES">
+<br>
+<ul>
+ <li>Company Website creation and maintenance;</li> 
+ <li>Liaising with suppliers and clients;</li>
+ <li>Online Marketing and Advertising for the purpose of buying and selling cars in the home market and abroad, mainly in United States, Germany and Spain.</li>
+</ul>
+<br>
+</span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper accomodation" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_1da43823-0e89-4468-ac7f-4d2ea07e692d" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2008-05</span><span dependency="JSTD+EDDT"> - </span>
+                            <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2009-06</span><br dependency="JTIT|COMP|JSTA|JCIT">
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline" dependency="JTIT">
+                                <span class="jobtitle txtBold" id="FIELD_JTIT">Bartender</span>
+                            </span>
+                            <span class="paddedline locationGap pb5" dependency="COMP|JSTA|JCIT">
+                                <span class="companyname" id="FIELD_COMP">M61 Meeting Bar / Movida Fashion Caffé</span><span dependency="COMP+JCIT|JSTA">,</span>
+                                <span class="jobcity" id="FIELD_JCIT">Sermide (MN)</span><span dependency="JCIT+JSTA">, </span>
+                                <span class="jobstate" id="FIELD_JSTA">Italy</span>
+                            </span>
+
+                            <span class="jobline" id="FIELD_JDES"><br><ul>
+ <li>Barman, organization of staff employed to serve customers at the tables.</li>
+ <li>Accommodation and Food Service activities. </li>
+</ul><p>-</p>
+</span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div></div></div></section><div class="acrs-bdr pa dn"></div></div><div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="true" data-hidedelete="false" data-hidemove="false"><div id="SECTION_EDUC91463402-a984-4a56-bee9-629ee6fcc527" class="section education" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_EDUC"><!-- react-text: 17764 -->Education<!-- /react-text --></div></div><div class="sortableInner"><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EDUC_329ea12b-c3f8-4cf2-91d5-f606c17b4983" class="paragraph firstparagraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRYR" format="%Y-%m" dependency="GRYR">2012</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY|GRPA">
+                                <span class="degree" id="FIELD_DGRE">Master in Entrepreneurship And Innovation</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY"> 2 yrs </span><span class="field" id="FIELD_GRPA"></span>
+                            </span>
+                            <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">Alma Mater Studiorum</span><span dependency="SCHO+SSTA|SCIT">, </span><span class="joblocation jobcity" id="FIELD_SCIT">Forlì, (IT)</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span class="field" id="FIELD_FRFM">
+<ul>
+ <li>Thesis: Tecniques, tools and strategies for Web Marketing.</li>
+<!-- <li>Graduated with 98/110</li>-->
+</ul>
+                            </span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EDUC_03e4fd9c-6aaa-4e91-beb1-6cff93d42c5a" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRYR" format="%Y-%m" dependency="GRYR">2012</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY|GRPA">
+                                <span class="degree" id="FIELD_DGRE">Master in Entrepreneuralship And Innovation</span><span dependency="DGRE+STUY">:</span><span class="programline" id="FIELD_STUY"> 1 Yr Erasmus program <!--Management And Innovation--></span><span class="field" id="FIELD_GRPA"></span>
+                            </span>
+                            <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">ISLA - Instituto Superior De Línguas E Administração</span><span dependency="SCHO+SSTA|SCIT">, </span><span class="joblocation jobcity" id="FIELD_SCIT">Lisbon, (PT)</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span class="field" id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div><div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EDUC_29a5b5f8-9649-4e31-b9c2-b81354096651" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRYR" format="%Y-%m" dependency="GRYR">2007</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY|GRPA">
+                                <span class="degree" id="FIELD_DGRE">Bachelor of Economics</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY">3 Yrs</span><span class="field" id="FIELD_GRPA"></span>
+                            </span>
+                            <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">Alma Mater Studiorum</span><span dependency="SCHO+SSTA|SCIT">, </span><span class="joblocation jobcity" id="FIELD_SCIT">Bologna, (IT)</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span class="field" id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div>
+    <!--<div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EDUC_f66e0511-cd71-4c3e-911c-985e0a48dae6" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                             <span class="jobdates" id="FIELD_GRYR" format="%Y-%m" dependency="GRYR">2006</span>                           
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY|GRPA">
+                                <span class="degree" id="FIELD_DGRE">Spanish Language and Culture</span><span dependency="DGRE+STUY">: </span><span class="programline" id="FIELD_STUY"><a href="http://www.uimp.es/en/academic-activities/spanish-courses/spanish-language-and-culture-courses/spanish-language-and-culture.html">Intensive Course</a></span><span class="field" id="FIELD_GRPA"></span>
+                            </span>
+                            <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">Universidad Internacional Menéndez Pelayo</span><span dependency="SCHO+SSTA|SCIT">, </span><span class="joblocation jobcity" id="FIELD_SCIT">Santander, (SP)</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span class="field" id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div>-->
+                       
+<!--                    <div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EDUC_b2e73e79-a3d8-42c0-9d99-7b73401c22f1" class="paragraph"><div>
+                        <div class="paddedline date-content">
+                            <span class="jobdates" id="FIELD_GRYR" format="%Y-%m" dependency="GRYR">2002</span>
+                        </div>
+                        <div class="singlecolumn">
+                            <span class="paddedline degreeGap txtBold" dependency="DGRE|STUY|GRPA">
+                                <span class="degree" id="FIELD_DGRE">High School Diploma</span><span class="programline" id="FIELD_STUY"></span><span class="field" id="FIELD_GRPA"></span>
+                            </span>
+                            <div class="paddedline pb5" dependency="SCIT|SSTA|SCHO">
+                                <span class="companyname" id="FIELD_SCHO">Liceo Sciantifico Statale Galileo Galilei</span><span dependency="SCHO+SSTA|SCIT">, </span><span class="joblocation jobcity" id="FIELD_SCIT">Ostiglia (MN)</span><span class="joblocation jobstate" id="FIELD_SSTA"></span>
+                            </div>
+                            <span class="field" id="FIELD_FRFM"></span>
+                        </div>
+                    </div></div></div><div class="acrs-bdr pa dn" style="left: -79px;"></div></div>-->
+                       
+                       </div></div></section><div class="acrs-bdr pa dn"></div></div>
+    
+<!--    <div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="false"><div id="SECTION_CERT6ccd7208-c6e2-44b5-a14d-499367a91d12" class="section" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_CERT">Certifications</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_CERT_ff315206-915c-4a96-9362-738d7ea98ae2" class="paragraph firstparagraph"><div>
+                        <div class="field singlecolumn" id="FIELD_FRFM"><p>Google Analytics Individual Qualification (IQ) - License 01679635</p></div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div>
+    </div>-->
+    
+    <div data-react-beautiful-dnd-draggable="12" class="SortableItem pr SortableItem-sibling"><div class="wrapper-bg pa dn"></div><section class="wrapper" data-section="[object Object]" data-hideedit="false" data-hidedelete="false" data-hidemove="false"><div id="SECTION_INTR972afb02-22fe-429b-9f43-fd9e0e35c3d1" class="section" data-section="[object Object]"><div class="heading heading"><div class="sectiontitle" id="SECTIONNAME_INTR">Interests</div></div><div class="" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_INTR_b8775988-eead-4f36-9545-91877f56766b" class="paragraph firstparagraph"><div>
+                        <div class="field singlecolumn" id="FIELD_FRFM"><p>Photography, arts, travelling, web design and photo editing.</p>
+<p><br></p>
+<p>Contributor at:</p>
+<p><a href="https://github.com/FedericoFioravanti/" target="_blank">Shutterstock</a> | <a href="https://stock.adobe.com/contributor/202558543/t_o_r_q_u_e" target="_blank">Adobe Stock</a> | <a href="https://www.istockphoto.com/portfolio/federico_fioravanti?license=rf&mediatype=photography&sort=best&assettype=image">iStockphoto</a>| <a href="https://unsplash.com/@t__o__r__q__u__e">Unsplash</a>| <a href="https://www.eyeem.com/u/federicofioravanti5">EyeEm</a></p>
+<p><br></p>
+<p>I'm a sound engineer and a composer of electronic, ambience, idm and background music.<p> 
+<p><a href="#" target="_blank">Soundcloud</a> | <a href="#" target="_blank">Jamendo</a> | <a href="#" target="_blank">ReverbNation</a></p>                
+                   
+                   </div>
+                    </div></div></div></div></section><div class="acrs-bdr pa dn"></div></div></div></div></div></div></div><div class="spellcheck-notification "><i class="fas fa-check "></i><!-- react-text: 17161 --><!-- /react-text --></div></section><style type="text/css"></style></body><style type="text/css"></style></html>
