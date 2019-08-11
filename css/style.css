@@ -1,0 +1,304 @@
+<style type="text/css" id="static">
+        /*Font support for MAC*/
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:normal;src:local('Century Gothic'),url('https://content.livecareer.com/zty/fonts/CenturyGothic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:normal;src:local('Century Gothic Bold'),url('https://content.livecareer.com/zty/fonts/CenturyGothicBold.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:bold;font-style:italic;src:local('Century Gothic Bold Italic'),url('https://content.livecareer.com/zty/fonts/CenturyGothicBoldItalic.ttf') format('truetype')}
+        @font-face{font-family:'Century Gothic';font-weight:normal;font-style:italic;src:local('Century Gothic Italic'),url('https://content.livecareer.com/zty/fonts/CenturyGothicItalic.ttf') format('truetype')}
+
+     /*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">*/
+   
+    /*<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">*/
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+        body{line-height:1;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+        #document ol,#document ul{list-style:none}
+        #document table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
+
+        /*START content disc style for LI*/
+        #document ul,#document li{margin:0;padding:0;list-style-type:disc}
+        #document ul li{margin:0 0 0 16px;padding:0}
+        @-moz-document url-prefix() {#document ul li{margin:0 0 0 12px;padding:0 0 0 3px}}
+        /*END content disc style for LI*/
+
+        /*common style*/
+        #document .txtBold{font-weight:bold}
+        #document .paddedline{display:block}
+        #document .pt5{padding-top:5px}
+        #document .pb5{padding-bottom:5px}
+        #document .word-break{word-wrap:break-word}
+        #document .disp-n{display:none}/*For resume title - to be remove later*/
+
+        /* table skills */
+        #document table.skills,.table_wrapper{width:100%;margin-top:0;word-wrap:break-word}
+        #document table.skills th,table.skills td{width:20%;text-align:center}
+        #document table.skills .skillname,#document table.skills .skillrating{text-align:left;width:35%}
+        #document table.skills .skillrating{width:20%}
+        #document table.skills .skillyears,#document table.skills .skilllast{width:19%}
+        #document table.skills .pad1{width:5%}
+        #document .skills .pad2,#document table.skills .pad3{width:1%}
+
+        /* document */
+        #document {
+    box-sizing: border-box;
+    padding: 20px 30px 20px 15px;
+    color: #343434;
+    font-variant-ligatures: none;
+    line-height: 16px;
+    min-height: 792px;
+}
+        #document .name{color:#373d48;font-weight:700;overflow:hidden;text-align:left;display:table;min-height:86px}
+        #document .flname{display:table-cell;}
+        #document .address .singlecolumn,#document .additional_lnk .singlecolumn{margin-left:0!important}
+        #document .degreeGap{margin-bottom:4px}
+        #document .locationGap{margin-top:4px}
+        #document .heading{font-weight:700;margin-bottom:10px;position:relative}
+        #document .sectiontitle{font-size: 20px;color:#373d48;line-height:23px;word-wrap:break-word;text-decoration: underline;}
+        #document div.firstparagraph{padding-top:0px}
+        #document .parentContainer{border-collapse:collapse;display:table;min-height:inherit;table-layout:fixed;width:100%}
+
+        /*monogram*/
+        #document .monogram{}
+
+        /*leftBox and rightBox css*/
+        #document .left-box,#document .right-box{box-sizing:initial;display:table-cell;padding-left:15px;vertical-align:top}
+        #document .left-box .firstsection{margin:0;padding:0;min-height:101px}
+        /*#document .left-box .paddedline.date-content{position:absolute;font-weight:700;margin-left:0;width:65px;left:-97px}*/
+        #document .paragraph{position:relative}
+        #document .left-box .paragraph{margin-left:0}
+        #document .section:empty{display:none}
+        #document .left-box .section{border-left:1px solid #d7d7d7;margin-left:12px;padding-left:25px;position:relative}
+        #document .left-box{width: 500px;}
+
+        #document .left-box .firstsection,#document .additional_lnk,#document .summary{border:0;padding-top:0!important}
+        #document .firstsection + .section:before{border:1px solid #fff;content:'';left:-1px;position:absolute;top:0}
+/*        #document .heading:before,#document .left-box .heading ~ .paragraph .date-content:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;right:-10px;position:absolute;width:8px;z-index:2}*/
+        #document .right-box .heading:before{left:0}
+        #document .right-box .sectiontitle{}
+        #document .heading:before{height:20px;left:-35px;width:20px}
+
+        /* Issues fix for builder page */
+        #displayResume div#document.document {
+min-height: 792px;
+width: 980px;
+margin: 20px auto;
+border: 1px solid #ccc;}
+        #document .SortableList{margin-bottom:0!important}
+        #document .SortableList,#document > div{min-height:inherit}
+        #document > div:not(.topsection),#document > div:not(.parentContainer){min-height:auto}
+        #document .right-box .summary .paragraph{margin-left:0}
+        #document .right-box > .SortableItem:first-child .section{padding-top:20px!important}
+/*        #document .left-box > .SortableItem .paragraph .date-content:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;right:-10px;position:absolute;width:8px;z-index:2}*/
+        #document .SortableInner > .SortableItem:last-of-type .singlecolumn > .pb5{margin-bottom:0}
+
+        /* Only for firefox */
+        @-moz-document url-prefix() {#document .parentContainer{height:1px}}
+
+        #document,#document table{line-height:18px}
+        #document.fontface{font-family:Century Gothic}
+        #document.fontsize{font-size:14px}
+        #document.pagesize{width:612px}
+        #document .section{padding-top:15px}
+        #document .left-box .section:after{padding-bottom:10px}
+        #document .paragraph{padding-top:15px}
+        #document .singlecolumn,#document .maincolumn{word-wrap:break-word}
+        #document left-box .singlecolumn,#document left-box .maincolumn{margin-left:0px}
+        #document table.skills td{padding-top:2.5px}
+        #document .jobtitle, #document .degree, #document .programline{font-size:16px}
+        #document .name{color:#373d48;font-size:36px;line-height:42.5px}
+        #document .monogram svg circle{fill:#373d48}
+        #document .sectiontitle,#document .heading:before{font-size:16px;color:#373d48;line-height:23px}
+        #document .sectiontitle, #document .resumeTitle{line-height:23px}
+        #document .right-box{width:200px}
+        #document .firstsection + .section:before{height:1.5px}
+        #document .heading:before{background:#373d48;top:1.5px}
+        #document .left-box .heading ~ .paragraph .date-content:before,#document .left-box > .SortableItem .paragraph .date-content:before{background:#373d48}
+        #document .paragraph .date-content:before{top:5.5px}
+        /*#document .left-box .paddedline.date-content{line-height:19px}*/
+        #document .left-box .paddedline.date-content {position: absolute; font-weight: 700; margin-left: 0; right: 0;font-size: 12px; line-height: 17px !important;}
+    
+        /* ADDEDUNDUM */
+       .photo-cv {border-radius: 50%;border: 1px solid #eee;}
+       #POSITION {font-size: 55%;float: left;}
+       #FIELD_SKC1 span {
+background: #444;
+color: #fff;
+margin: 2px;
+border-radius: 2px;
+padding: 2px 6px;
+display: inline-block;
+font-size: 12px;
+line-height: 22px;
+border-radius: 4px;
+}
+       #document a {color: #0366d6;text-decoration: none;font-weight: bold;}
+       .left-box p, .left-box ul li {font-size: 108%;line-height: 143%;}
+       .hide-me, .accomodation {}
+ 
+img.logo-job {
+    width: 40px;
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}   
+        
+.logo-job i {
+    width: 40px;
+    float: left;
+    margin-right: 0px;
+    clear: both;
+    font-size: 35px;
+    padding: 3px;
+}
+        
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+        
+        .button-cv {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button-cv:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+        
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+    
+/* Styling an indeterminate progress bar */
+    
+progress:not(value) {
+	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+	/* Get rid of the default appearance */
+	appearance: none;
+	
+	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+	border: none;
+	
+	/* Add dimensions */
+	width: 100%; height: 20px;
+	
+	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+	  background-color: whiteSmoke;
+	  border-radius: 3px;
+	  box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+	
+	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+	color: royalblue;
+	
+	position: relative;
+	margin: 0 0 1.5em; 
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+	background-color: whiteSmoke;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	position: relative;
+	
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+	border-radius:3px;
+	
+	/* Let's animate this */
+	animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+	/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+	content: '';
+	position: absolute;
+	
+	width:5px; height:5px;
+	top:7px; right:7px;
+	
+	background-color: white;
+	border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+	
+	display: block;
+	text-indent: -9999px;
+}
+
+p[data-value] { 
+  
+  position: relative; 
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+p[data-value]:after {
+	content: attr(data-value) '';
+	position: absolute; right: -18px;
+font-size: 12px;
+font-weight: bold;
+}
+
+/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+
+  
+/* THE END */
+    
+    </style>
