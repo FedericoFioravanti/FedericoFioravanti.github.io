@@ -146,7 +146,7 @@ margin: 0px auto;
         #document .monogram svg circle{fill:#373d48}
         #document .sectiontitle,#document .heading:before{font-size:16px;color:#373d48;line-height:23px}
         #document .sectiontitle, #document .resumeTitle{line-height:23px}
-        #document .right-box{width:200px}
+        #document .right-box{width:180px}
         #document .firstsection + .section:before{height:1.5px}
         #document .heading:before{background:#373d48;top:1.5px}
         #document .left-box .heading ~ .paragraph .date-content:before,#document .left-box > .SortableItem .paragraph .date-content:before{background:#373d48}
@@ -369,15 +369,18 @@ font-weight: bold;
                         <div class="address">
                             <div class="singlecolumn">
                                 <div dependency="STRT|CITY|STAT|ZIPC">
-                                    <div class="txtBold">Address:                                     <!--<div class="field" id="FIELD_STRT">Rottenbiller Utca 35</div>-->
+                                    <div class="txtBold">Address:</div>
+                                    <!--<div class="field" id="FIELD_STRT">Rottenbiller Utca 35</div>-->
                                     <span class="field" id="FIELD_CITY">Budapest</span><span dependency="CITY+STAT|ZIPC">,</span>
-                                    <span class="field" id="FIELD_STAT">Hungary</span><span dependency="STAT+ZIPC"></span> </div>
+                                    <span class="field" id="FIELD_STAT">Hungary</span><span dependency="STAT+ZIPC"></span>
 
                                     <!--<span class="field" id="FIELD_ZIPC">1077</span>-->
                                 </div>
-                                <div class="txtBold pt5" dependency="HPHN|CPHN">Phone: <span class="field" id="FIELD_HPHN"><a href="tel:00393406246452">(+39) 3406246452</a></span> </div>
+                                <div class="txtBold pt5" dependency="HPHN|CPHN">Phone</div>
+                                <span class="field" id="FIELD_HPHN"><a href="tel:00393406246452">(+39) 3406246452</a></span> 
 
-                                <div class="txtBold pt5" dependency="EMAI">E-mail: <span class="field" id="FIELD_EMAI"><a href="mailto:federico.fioravanti@icloud.com">federico.fioravanti@icloud.com</a></span> </div>
+                                <div class="txtBold pt5" dependency="EMAI">E-mail</div>
+                                <span class="field" id="FIELD_EMAI"><a href="mailto:federico.fioravanti@icloud.com">federico.fioravanti@icloud.com</a></span><br>
 
 
                                 <div dependency="EMAI" class="word-break">
