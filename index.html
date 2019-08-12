@@ -58,6 +58,7 @@
 
         /*common style*/
         #document .txtBold{font-weight:bold}
+        #document .txtBold span {font-weight: normal; text-decoration: none;}
         #document .paddedline{display:block}
         #document .pt5{padding-top:5px}
         #document .pb5{padding-bottom:5px}
@@ -369,18 +370,14 @@ font-weight: bold;
 
                                     <!--<span class="field" id="FIELD_ZIPC">1077</span>-->
                                 </div>
-                                <div class="txtBold pt5" dependency="HPHN|CPHN">Phone </div>
-                                <div dependency="HPHN">
+                                <div class="txtBold pt5" dependency="HPHN|CPHN">Phone 
                                     <span class="field" id="FIELD_HPHN"><a href="tel:00393406246452">(+39) 3406246452</a></span>
                                 </div>
-                                
-                                <div class="txtBold pt5" dependency="EMAI">E-mail </div>
-                                <div dependency="EMAI" class="word-break">
-                                    <span class="field" id="FIELD_EMAI"><a href="mailto:federico.fioravanti@icloud.com">federico.fioravanti@icloud.com</a></span>
-                                    
-<!--                                <div class="txtBold">Skype ID </div>
-                                    <div class="field" id="FIELD_STRT">amciamkarlo</div>-->
-                                    
+
+                                <div class="txtBold pt5" dependency="EMAI">E-mail 
+                                <span class="field" id="FIELD_EMAI"><a href="mailto:federico.fioravanti@icloud.com">federico.fioravanti@icloud.com</a></span>
+                                </div>
+
                                      <div class="txtBold">Find me on:</div>
                                     
                                     <p>
