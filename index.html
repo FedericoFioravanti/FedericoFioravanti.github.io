@@ -73,14 +73,7 @@
         #document .skills .pad2,#document table.skills .pad3{width:1%}
 
         /* document */
-        #document {
-    box-sizing: border-box;
-    padding: 20px 30px 20px 15px;
-    color: #343434;
-    font-variant-ligatures: none;
-    line-height: 16px;
-    min-height: 792px;
-}
+        #document {box-sizing: border-box;padding: 20px 30px 20px 15px;color: #343434;font-variant-ligatures: none;line-height: 16px;min-height: 792px;}
         #document .name{color:#373d48;font-weight:700;overflow:hidden;text-align:left;display:table;min-height:86px}
         #document .flname{display:table-cell;}
         #document .address .singlecolumn,#document .additional_lnk .singlecolumn{margin-left:0!important}
@@ -103,7 +96,6 @@
         #document .section:empty{display:none}
         #document .left-box .section{border-left:1px solid #d7d7d7;margin-left:12px;padding-left:25px;position:relative}
         #document .left-box{width: 500px;}
-
         #document .left-box .firstsection,#document .additional_lnk,#document .summary{border:0;padding-top:0!important}
         #document .firstsection + .section:before{border:1px solid #fff;content:'';left:-1px;position:absolute;top:0}
 /*        #document .heading:before,#document .left-box .heading ~ .paragraph .date-content:before{background:#373d48;border:0;border-radius:100%;content:"";display:block;height:8px;right:-10px;position:absolute;width:8px;z-index:2}*/
@@ -112,11 +104,7 @@
         #document .heading:before{height:20px;left:-35px;width:20px}
 
         /* Issues fix for builder page */
-        #displayResume div#document.document {
-min-height: 792px;
-width: 980px;
-margin: 0px auto;
-}
+        #displayResume div#document.document {min-height: 792px;width: 980px;margin: 0px auto;}
         #document .SortableList{margin-bottom:0!important}
         #document .SortableList,#document > div{min-height:inherit}
         #document > div:not(.topsection),#document > div:not(.parentContainer){min-height:auto}
@@ -152,58 +140,20 @@ margin: 0px auto;
         #document .left-box .paddedline.date-content {position: absolute; font-weight: 700; margin-left: 0; right: 0;font-size: 14px; line-height: 17px !important;}
     
         /* ADDEDUNDUM */
-       .photo-cv {border-radius: 50%;border: 1px solid #eee;}
-       #POSITION {font-size: 55%;float: left;}
-       #FIELD_SKC1 span {display: block;line-height: 20px;}
-#FIELD_SKC1 span::before, #FIELD_FRFM span::before {
-    content: "\f0da";
-    font-weight: bold;
-    color: #0366d6;
-    margin-right: 7px;
-    font-family: FontAwesome;
-    font-size: 12px;
-}
-           
-           .address a i {
-    font-size: 30px;
-    color: #444;
-    margin: 10px 10px 10px 0;
-}
-           
-           #FIELD_FRFM span {
-    display: block;
-    line-height: 22px;
-}
-           
-           
-       #document a {color: #0366d6;text-decoration: none;font-weight: bold;}
-       .left-box p, .left-box ul li {
-    font-size: 105%;
-    line-height: 142%;
-}
-       .hide-me, .accomodation {}
-       .exclude.marketing {}
-       .exclude.accomodation {}
- 
-img.logo-job {
-    width: 40px;
-    float: left;
-    margin-right: 15px;
-    clear: both;
-}   
-        
-.logo-job i {
-    width: 40px;
-    float: left;
-    margin-right: 0px;
-    clear: both;
-    font-size: 35px;
-    padding: 3px;
-}
-           
+.photo-cv {border-radius: 50%;border: 1px solid #eee;}
+#POSITION {font-size: 55%;float: left;}
+#FIELD_SKC1 span {display: block;line-height: 20px;}
+#FIELD_SKC1 span::before, #FIELD_FRFM span::before {content: "-";font-weight: bold;margin-right: 7px;font-family: FontAwesome;font-size: 12px;}         
+.address a i {font-size: 30px;color: #444;margin: 10px 10px 10px 0;}
+#FIELD_FRFM span {display: block;line-height: 22px;}
+#document a {color: #0366d6;text-decoration: none;font-weight: bold;}
+.left-box p, .left-box ul li {font-size: 105%;line-height: 142%;}
+.exclude.accomodation {display:none}
+.exclude.marketing {}
+img.logo-job {width: 40px;float: left;margin-right: 15px;clear: both;}        
+.logo-job i {width: 40px;float: left;margin-right: 0px;clear: both;font-size: 35px;padding: 3px;}         
 .divider {clear: both; margin: 20px 0; border-bottom: 1px solid #d7d7d7;}
-        
-        .button {
+.button {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -214,15 +164,8 @@ img.logo-job {
   font-size: 16px;
 }
         
-        .button-cv {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button-cv:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
-}
+.button-cv {-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;}
+.button-cv:hover {background-color: #4CAF50; /* Green */color: white;}
         
 button {
     display: inline-block;
@@ -242,20 +185,10 @@ button {
     -moz-appearance: none;
 }
 
-button:hover,
-button:focus {
-    background: #0053ba;
-}
+button:hover,button:focus {background: #0053ba;}
+button:focus {outline: 1px solid #fff;outline-offset: -4px;}
+button:active {transform: scale(0.99);}
 
-button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
-
-button:active {
-    transform: scale(0.99);
-}
-    
 /* Styling an indeterminate progress bar */
     
 progress:not(value) {
@@ -652,7 +585,7 @@ Structured data-->
 <!--                      START OF MISCO III -->
                                                                   
                        
-                    <div class="SortableItem pr"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_e7c5795b-9625-4114-a244-20941f1d490d" class=""><div>
+                    <div class="SortableItem pr" style="display: none;"><div class="wrapper-bg pa dn" style="left: -80px; right: -80px;"></div><div class="wrapper" data-section="[object Object]" data-paragraph="[object Object]"><div id="PARAGRAPH_EXPR_e7c5795b-9625-4114-a244-20941f1d490d" class=""><div>
                         <div class="paddedline date-content">
                             <span class="jobdates" id="FIELD_JSTD" format="%Y-%m">2016 Nov</span><span dependency="JSTD+EDDT"> - </span>
                             <span class="jobdates" id="FIELD_EDDT" format="%Y-%m">2017 Jun</span><br dependency="JTIT|COMP|JSTA|JCIT">
